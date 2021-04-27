@@ -9,7 +9,7 @@ const client = new pg.Client({ connectionString: process.env.DATABASE_URL, ssl: 
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 const methodOverride = require('method-override');
-const { readdirSync } = require('fs');
+// const { readdirSync } = require('fs');
 app.use(methodOverride('_method'));
 app.use(express.static('./public'));
 app.set('view engine', 'ejs');
