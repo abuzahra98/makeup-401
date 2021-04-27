@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <%data.map(ele=>{%>
+            <h4><%=ele.name%></h4>
+<img src="<%=ele.img%>" alt="">
+
+<h4><%=ele.price%></h4>
+<h4><%=ele.description%></h4>
+<h4><form action="/Delete/<%=ele.id%>?_method=delete" method="POST" >
+   
+   
+    <input type="submit" value="Delete">
+</form></h4>
+<h4><form action="/Update/<%=ele.id%>?_method=put" method="POST" >
+    <input type="text" name="pname" id="pname" value="<%=ele.name%>">
+    <input type="text" name="pimg" id="pimg" value="<%=ele.img%>">
+    
+    <input type="text" name="pprice" id="pprice" value="<%=ele.price%>">
+    <input type="text" name="pdesc" id="pdesc" value="<%=ele.description%>">
+    <input type="submit" value="Update">
+</form></h4>
+
+
+            <%});%>
+    </div>
+</body>
+</html>

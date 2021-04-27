@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <%if (data.length == 0) { %>
+           <h1>No Products in Your Card</h1>
+            <% } %>
+        <%data.map(ele=>{%>
+            <h4><%=ele.name%></h4>
+<img src="<%=ele.img%>" alt="">
+
+<h4><%=ele.price%></h4>
+
+<h4><form action="/ProductDetails/<%=ele.id%>" method="get" >
+    
+    <input type="submit" value="View-Details">
+</form></h4>
+
+
+            <%});%>
+    </div>
+</body>
+</html>

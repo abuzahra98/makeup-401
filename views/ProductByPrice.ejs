@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <%data.map(ele=>{%>
+            <h4><%=ele.name%></h4>
+<img src="<%=ele.image_link%>" alt="">
+
+<h4><%=ele.price%></h4>
+<h4><%=ele.description%></h4>
+
+
+            <%});%>
+    </div>
+</body>
+</html>
