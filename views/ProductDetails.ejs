@@ -6,6 +6,21 @@
     <title>Document</title>
 </head>
 <body>
+
+    <header>
+        <div>
+            <h1>Maibillyen Products</h1>
+            <h3>a web provide all mybillen products and prices</h3>
+        </div>
+        <nav>
+            <ul>
+                <li><a href='/'>Home</a></li>
+                <li><a href='/MaybellineProducts'>All Products</a></li>
+                <li><a href='/MyCard'>My card</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
     <div>
         <%data.map(ele=>{%>
             <h4><%=ele.name%></h4>
@@ -30,5 +45,6 @@
 
             <%});%>
     </div>
+</main>
 </body>
 </html>

@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-    
+    <header>
+        <div>
+            <h1>Maibillyen Products</h1>
+            <h3>a web provide all mybillen products and prices</h3>
+        </div>
+        <nav>
+            <ul>
+                <li><a href='/'>Home</a></li>
+                <li><a href='/MaybellineProducts'>All Products</a></li>
+                <li><a href='/MyCard'>My card</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
     <div>
         <%data.map(ele=>{%>
             <h4><%=ele.name%></h4>
@@ -18,5 +32,6 @@
 
             <%});%>
     </div>
+</main>
 </body>
 </html>

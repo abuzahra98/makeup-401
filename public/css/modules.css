@@ -1,0 +1,24 @@
+header{
+    height: 200px;
+    background-color: red;
+}
+
+nav ul li{
+    display: inline;
+
+    
+}
+nav {
+
+    height: 55px;
+
+  
+    background-color: black;
+}
+
+main div{
+    border-radius: 33px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px 2px black;
+    
+}

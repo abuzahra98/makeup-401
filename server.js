@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3030;
 const pg = require('pg');
 const superagent = require('superagent');
 const client = new pg.Client({ connectionString: process.env.DATABASE_URL, ssl: { rejectUnauthorized: false } });
-// app.use(cors());
+app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 const methodOverride = require('method-override');
 // const { readdirSync } = require('fs');
